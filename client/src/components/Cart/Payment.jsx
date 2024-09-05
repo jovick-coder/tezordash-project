@@ -93,25 +93,25 @@ const Payment = () => {
             //     },
             // });
 
-            // if (result.error) {
-            //     paymentBtn.current.disabled = false;
-            //     enqueueSnackbar(result.error.message, { variant: "error" });
-            // } else {
-            //     if (result.paymentIntent.status === "succeeded") {
+            if (result.error) {
+                paymentBtn.current.disabled = false;
+                enqueueSnackbar(result.error.message, { variant: "error" });
+            } else {
+                if (result.paymentIntent.status === "succeeded") {
 
-            //         order.paymentInfo = {
-            //             id: result.paymentIntent.id,
-            //             status: result.paymentIntent.status,
-            //         };
+                    order.paymentInfo = {
+                        id: result.paymentIntent.id,
+                        status: result.paymentIntent.status,
+                    };
 
-            //         dispatch(newOrder(order));
-            //         dispatch(emptyCart());
+                    dispatch(newOrder(order));
+                    dispatch(emptyCart());
 
-            //         navigate("/order/success");
-            //     } else {
-            //         enqueueSnackbar("Processing Payment Failed!", { variant: "error" });
-            //     }
-            // }
+                    navigate("/order/success");
+                } else {
+                    enqueueSnackbar("Processing Payment Failed!", { variant: "error" });
+                }
+            }
 
         } catch (error) {
             // paymentBtn.current.disabled = false;

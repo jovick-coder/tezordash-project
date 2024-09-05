@@ -60,6 +60,11 @@ const CartItem = ({ product, name, seller, price, cuttedPrice, image, stock, qua
                             <span className="text-xs text-gray-500">7 Days Replacement Policy</span>
                         </div>
 
+                        <div className="flex flex-col sm:gap-2">
+                            <p className="text-sm">Delivery by {getDeliveryDate()} | <span className="text-primary-green">Free</span> <span className="line-through">₹{quantity * 140}</span></p>
+                            <span className="text-xs text-gray-500">30 Days Replacement Policy</span>
+                        </div>
+
                     </div>
                     {/* <!-- product title --> */}
 
