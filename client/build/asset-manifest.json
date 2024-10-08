@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a41c3829.css",
+    "main.js": "/static/js/main.e641cf88.js",
+    "static/media/Inter-Bold.ttf": "/static/media/Inter-Bold.54fe1f0abf8a4b822deb.ttf",
+    "static/media/Inter-Regular.ttf": "/static/media/Inter-Regular.fd272b9e3ca9b73890cb.ttf",
+    "index.html": "/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.a41c3829.css",
+    "static/js/main.e641cf88.js"
+  ]
+}
