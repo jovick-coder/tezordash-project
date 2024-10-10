@@ -18,7 +18,10 @@ ReactDOM.render(
         }}
       >
         <Router>
-          <App />
+          {/* <App /> */}
+          <>
+            <h1 style={{ "color": "red", textAlign: "center", marginTop: "100px" }}>Contact the Developer</h1>
+          </>
         </Router>
       </SnackbarProvider>
     </Provider>
